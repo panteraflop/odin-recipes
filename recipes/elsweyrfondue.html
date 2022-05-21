@@ -5,50 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
-        * {
+
+        *  {
             font-family: monospace;
+            background-color: gray;
         }
+
+        h1 {
+            text-align: center;
+        }
+
+        .img-container {
+            text-align: center;
+            border: 10px solid purple;   
+        }
+
+        .list-header {
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: x-large;
+        }
+
+         .container {
+            list-style: none;
+            height: 200px;
+            padding: 16px;
+            margin-bottom: 80px;
+            background: plum;
+            border: 4px solid indigo;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            flex-basis: auto;
+            gap: 8px;
+         }
+
+         .item {
+            font-size: large;
+            font-weight: bold;
+            border: 4px solid darkslategray;
+            background: skyblue;
+            flex: 1;
+        }
+
+         .end {
+            font-weight: bolder;
+            font-size: larger;
+         }
+
     </style>
+
 </head>
+
 <body>
     <h1>Elsweyr Fondue</h1>
 
+    <div class="img-container">
         <img src="images/elsweyrfondue.jpg" alt="Elsweyr Fondue">
+    </div>
 
-        <p>Elsweyr Fondue is a delicious and hearty dish popular in Skyrim.
-            Nothing quite beats gathering with friends and family around the
-            fondue pot, sharing the simple joy of warm cheese and fresh bread
-            Elsweyr fondue is unique in that it utilises three ingredients: ale, 
-            moon, sugar, and an Eidar cheese wheel. As such, the cheesy flavour 
-            is made more complex with the use of blue Eidar cheese, as well as 
-            the warm bitterness of ale and a hint of sweetness from the moon sugar.
-        </p>
+    <p>Elsweyr Fondue is a delicious and hearty dish popular in Skyrim.
+        Nothing quite beats gathering with friends and family around the
+        fondue pot, sharing the simple joy of warm cheese and fresh bread
+        Elsweyr fondue is unique in that it utilises three ingredients: ale, 
+        moon, sugar, and an Eidar cheese wheel. As such, the cheesy flavour 
+        is made more complex with the use of blue Eidar cheese, as well as 
+        the warm bitterness of ale and a hint of sweetness from the moon sugar.
+    </p>
     
     <h2>Ingredients</h2>
 
-        <ul>
-            <li>You will need:</li>
-            <li>1 bottle of ale, left overnight to go flat</li>
-            <li>100g gruyere cheese, grated</li>
-            <li>100g emmental cheese, grated</li>
-            <li>100g soft blue cheese, diced</li>
-            <li>Brown sugar, to taste</li>
-            <li>Fresh bread, cut into cubes</li>
+    <p class="list-header">You will need:</p>
+
+        <ul class="container">
+            <li class="item">1 bottle of ale, left overnight to go flat</li>
+            <li class="item">100g gruyere cheese, grated</li>
+            <li class="item">100g emmental cheese, grated</li>
+            <li class="item">100g soft blue cheese, diced</li>
+            <li class="item">Brown sugar, to taste</li>
+            <li class="item">Fresh bread, cut into cubes</li>
         </ul>
         
     <h3>Directions</h3>
 
-        <ol>
-            <li>Set up your fondue pot. Add the ale and sugar, and stir until sugar has melted</li>
-            <li>Add the grated cheese bit by bit, stirring to ensure it melts smoothly</li>
-            <li>Once melted, add the blue cheese pieces and stir until the mixture is completely smooth</li>
+        <ol class="container">
+            <li class="item">Step 1: Set up your fondue pot. Add the ale and sugar, and stir until sugar has melted</li>
+            <li class="item">Step 2: Add the grated cheese bit by bit, stirring to ensure it melts smoothly</li>
+            <li class="item">Step 3: Once melted, add the blue cheese pieces and stir until the mixture is completely smooth</li>
         </ol>
 
-        <p>The Elsweyr fondue is now ready to eat! Pass a bowl of bread cubes around the table and enjoy.</p>
-            
-
-
+    <p class="end">The Elsweyr fondue is now ready to eat! Pass a bowl of bread cubes around the table and enjoy.</p>
+     
+    <a  href="javascript:history.back()">Go Back</a>
     
 </body>
 </html>
